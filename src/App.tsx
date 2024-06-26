@@ -5,20 +5,7 @@ import './App.scss'
 
 function App() {
   const[searchCountry, setCountry]= useState<string>("")
-  const submited = (e:any) => {
-    e.preventDefault()
-    const name: any = document.querySelector('.named')
-    const Names = name.innerHTML
-    const getted: any = document.querySelector('.getting')
-    const gets = getted.value
-    console.log(name.innerHTML)
-    if (Names === gets) {
-      window.alert("theymatch")
-    }
-    else {
-      window.alert("error")
-    }
-  }
+
  const filterCountry=data.filter((coun)=>
   coun.name.toLowerCase().includes(searchCountry.toLocaleLowerCase())
  );
@@ -29,7 +16,7 @@ function App() {
       <div className="entire">
         
         <input type="text" className='getting' value={searchCountry} onChange={(e)=>{setCountry(e.target.value)}} placeholder='search country' />
-      
+       
         <div className="container">
           {
             filterCountry && filterCountry.map((data, index) => {
