@@ -1,0 +1,43 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: antiquewhite;
+ 
+}
+.entire{
+  margin: 2em 5em;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+ 
+}
+.data{
+  background-color: rgba(234,13,125, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+.back .data{
+  background-color: rgba(23,13,125, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+.more{
+  width: 100%;
+}
+.showmore{
+  text-decoration: none;
+}
+.getting{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.getting::placeholder{
+  color: red;
+  font-size: 20px;
+}
